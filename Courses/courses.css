@@ -1,0 +1,40 @@
+#top-img{
+    text-align: center;
+    cursor: pointer;
+}
+#top-img>img{
+    height: 374px;
+    background-color: #FFF5F5;
+}
+#top-img>img+img{
+    background-color: #EBEBF5;
+}
+.m_divContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93px;
+    border: 1px solid red;
+    margin-top: 10px;
+    
+   
+}
+.m_divContainer>div>p{
+    font-size: 22px;
+    padding: 12px;
+    border: 1px solid green;
+    cursor: pointer;
+}
+.m_divContainer+h2{
+    text-align: center;
+    font-size: 38px;
+    font-family: sans-serif;
+    color: #232434;
+}
+.m_divContainer+h2+p{
+    color: #38404C;
+    font-size: 24px;
+    text-align: center;
+    margin-top: -20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
