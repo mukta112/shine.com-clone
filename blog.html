@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+      header {
+        width: 100%;
+        /* height: 100vh; */
+        border: 1px solid blue;
+      }
+      .navSection {
+        border: 1px solid rgb(0, 136, 255);
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      #logo {
+        border: 1px solid green;
+        width: 13%;
+        height: 30px;
+        display: flex;
+        padding-bottom: 60px;
+        margin-right: -100px;
+      }
+      img {
+        /* border: 1px solid yellowgreen; */
+        height: 59px;
+        width: 150%;
+      }
+
+      nav {
+        border: 1px solid red;
+        width: 39%;
+        display: flex;
+        justify-content: space-around;
+      }
+      nav a {
+        text-decoration: none;
+        justify-content: space-evenly;
+        padding-top: 5px;
+        font-size: 16px;
+        color: #333333;
+        position: relative;
+      }
+      nav a i {
+        font-size: 20px;
+      }
+      .btn_search {
+        border: 1px solid red;
+        width: 260px;
+        display: flex;
+        margin-left: -125px;
+      }
+      #btn {
+        border: 1px solid blue;
+        background-color: #2980b9;
+        width: 40px;
+        height: 35px;
+      }
+      #search {
+        width: 220px;
+      }
+      #btn i {
+        color: #fff;
+        padding: 10px;
+      }
+      .second_navbar {
+        width: 100%;
+        display: flex;
+        background-color: #f1f2f6;
+        height: 8vh;
+        margin-top: 10px;
+        border: 1px solid red;
+        padding: 8px;
+        gap: 10px;
+      }
+      .s_nav {
+        font-size: 14px;
+      }
+      .first_navbar a {
+        border: 1px solid green;
+        text-decoration: none;
+        color: #333333;
+        width: 100px;
+        display: flex;
+        margin-left: 25px;
+        flex-direction: column;
+      }
+      .small_nav {
+        border: 1px solid green;
+        padding: 10px;
+        width: 100%;
+      }
+      .small_nav a {
+        text-decoration: none;
+        font: 14px;
+        color: #333333;
+        margin-left: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="navSection">
+        <div id="logo">
+          <img
+            src="https://www.exchange4media.com/news-photo/1522754132_FX6hMY_Shine.com-Logo_final.jpg"
+            alt=""
+          />
+          <!-- <img src="data:image/png;base64,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" alt=""> -->
+        </div>
+
+        <div class="btn_search">
+          <input
+            type="text"
+            name=""
+            id="search"
+            placeholder="Search Courses assessment.."
+          />
+          <div id="btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <nav>
+          <a href="">Job Assistance</a>
+          <a href="">Practice Tests</a>
+          <a href="">Free Resources</a>
+          <a href="">Blog</a>
+          <a href=""><i class="fa-solid fa-phone"></i></a>
+          <a href=""><i class="fa-regular fa-user"></i></a>
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+      </section>
+    </header>
+    <!-- ******************second navbar******************** -->
+
+    <div class="second_navbar">
+      <div class="first_navbar">
+        <a href="#" class="s_nav">Explore</a>
+        <a href="#" class="second_nav2">Categories</a>
+      </div>
+      <div class="small_nav">
+        <a href="#" class="sec_nav">Six Sigma</a>
+        <a href="#" class="sec_nav">Project Management</a>
+        <a href="#" class="sec_nav">Big Data</a>
+        <a href="#" class="sec_nav">IT Software</a>
+        <a href="#" class="sec_nav">Data Science</a>
+        <a href="#" class="sec_nav">cloud computing</a>
+        <a href="#" class="sec_nav">Analytics Vidhya</a>
+      </div>
+    </div>
+
+    <!-- ***********************slide bar***************************** -->
+    <style>
+      #third_navbar {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 420px;
+        background-color: #5352ed;
+      }
+    </style>
+    <div id="third_navbar">
+      <!-- <img src="" alt=""> -->
+      <!-- <img src="" alt=""> -->
+    </div>
+
+    <!-- ************************************************** -->
+
+    <style>
+      #fourth_nav {
+        height: 2000px;
+        border: 1px solid ;
+        display: flex;
+        gap: 130px;
+        margin-top: 45px;
+        width: 100%;
+      }
+      .forth_first {
+        /* border: 1px solid red; */
+        width: 55%;
+        height: 1500px;
+        margin-left: 185px;
+        /* border-radius: 10px; */
+
+        display: block;
+      }
+      .fourth_second {
+        border: 1px solid green;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 18%;
+        height: 1320px;
+        margin-left: -100px;
+      }
+      .abcd {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 150px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+        gap: 5px;
+        margin-left: 10px;
+      }
+      .abcd1 {
+        border: 1px solid red;
+        width: 110px;
+        height: 120px;
+      }
+      #font {
+        margin-top: 10px;
+        margin-left: 15px;
+        font: 20px;
+        color: #ffffff;
+      }
+      .paragraph {
+        margin-top: 10px;
+        margin-left: 15px;
+        font-size: 15px;
+        color: #ffffff;
+      }
+      .take {
+        font-size: 18px;
+        color: #28303f;
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+      .abcd1 > img {
+        width: 108px;
+        height: 70px;
+      }
+      .trend {
+        text-align: center;
+        color: #3f5f94;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+      .fourth {
+        border: 1px solid blue;
+        background-color: #333333;
+        height: 125px;
+        border-radius: 10px;
+      }
+      .tendiv {
+        border: 1px solid blue;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15px;
+        gap: 25px;
+      }
+      .trenddiv1 {
+        width: 100%;
+        height: 330px;
+        border: 1px solid red;
+      }
+      .recent {
+        margin-top: 35px;
+        font-size: 26px;
+        color: #3f5f94;
+      }
+      .trenddiv1 > img {
+        width: 100%;
+        height: 150px;
+      }
+      .header {
+        color: #333333;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-left: 15px;
+      }
+      .para1 {
+        color: #666666;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-left: 15px;
+      }
+    </style>
+    <div id="fourth_nav">
+      <div class="forth_first">
+        <div class="fourth">
+          <h3 id="font">Talent Economy</h3>
+          <p class="paragraph">
+            It goes without saying that over time, jobs will require a different
+            set of unique skillsets, as opposed to the ones required now. By
+            applying for the online professional courses present on this
+            platform, you'll be able to stay ahead of the curve and massively
+            improve your job prospects by staying future-ready at all times.
+          </p>
+        </div>
+        <h1 class="recent">Recent added</h1>
+        <div class="tendiv">
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/Deal_with_toxic_manager.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              How To Deal With a Toxic Manager: Tips That Might Come Handy
+            </h1>
+            <p class="para1">
+              There are millions of people who suffer from a toxic boss and are
+              struggling to cope with the situation. Do not let it affect your
+              life. Here are some steps that you can take.
+            </p>
+            <hr />
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/salary_negotiation.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              How to Use a New Job Offer to Re- Negotiate Your Current Salary
+            </h1>
+            <p class="para1">
+              There are many factors like an opportunity for advancement, work
+              environment, colleagues, etc. that need to be kept in mind before
+              accepting a job offer. In a case where you do not feel like
+              accepting the offer, you can use it as a way to renegotiate your
+              current salary.
+            </p>
+            <hr />
+          </div>
+          <div class="trenddiv1">
+            
+            <img
+              src="https://static1.shine.com/l/m/images/blog/Address_Employment_Gap.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              Here’s How To Address An Employment Gap In a Job Interview
+            </h1>
+            <p class="para1">
+              If you have an employment gap in your resume, it can be stressful
+              when looking for a new job. We are giving you a few tips to
+              address these employment gaps.
+            </p>
+            <hr />
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/High_paying_marketing_jobs.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              A Look at The High Paying Marketing Jobs in India (With Average
+              Salaries)
+            </h1>
+            <p class="para1">
+              With the rapid evolution of technologies and changing customer
+              behaviour, marketing has got a new meaning. It is an evolving
+              career with considerable bloom in India. It is also considered to
+              be one of the highest-paying jobs in India. In the article below,
+              let’s explore some of the highest-paying careers in Marketing.
+            </p>
+            <hr />
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/Negotiate_your_salary.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              A Handbook To Negotiating Your Salary Like A Pro
+            </h1>
+            <p class="para1">
+              Each of us is well aware that negotiation highly affects your pay
+              pack, but remember, it is also a game. Here are tips that will
+              help you master the game of salary negotiation.
+            </p>
+            <hr />
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/Become_an_influencer_wise_or_not.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              Quitting Your Job To Become An Influencer: Is It A Wise Idea or
+              Not?
+            </h1>
+            <p class="para1">
+              Influencers review a brand's product or service, generating
+              millions of likes, which ultimately help generate business for the
+              brand. However, with the increasing popularity of the career, have
+              you ever thought to pursue it? Well, let’s give it a thought.
+            </p>
+            <hr />
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/No_response_of_Interview.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              No Response After An Interview? Here's How to Follow Up by Email
+            </h1>
+            <p class="para1">
+              Don’t be tricked into thinking that once the interview is over,
+              your work is done and you just have to wait till the employer gets
+              back. Following up is an important strategic technique that allows
+              you to stand out. Let’s find out if following up is a good idea.
+            </p>
+            <hr />
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="  https://static1.shine.com/l/m/images/blog/it-professional-jobs.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              Ways That IT Professionals Can Keep Their Tech Skills Up To Date
+            </h1>
+            <p class="para1">
+              In this competitive era, it's important to stand out and this is
+              why employee upskilling is the need of the hour. In this blog, we
+              tell you how IT professionals can keep their tech skills relevant
+              and up to date.
+            </p>
+            <hr />
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/data_science.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              A Guide To Building A Great Data Science Resume With Samples
+            </h1>
+            <p class="para1">
+              Data Science is revolutionizing the future and is surely one of
+              the hottest careers of the 21st century. Here are some tips to
+              ensure that your data science resume gets the green light and
+              helps you progress into the interview stages to eventually get
+              hired into your dream role.
+            </p>
+            <hr />
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/Why_should_we_hire_you.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              Why Should We Hire You? - An Easy Hack To Answer
+            </h1>
+            <p class="para1">
+              The 'why should we hire you question essentially tests your
+              ability to sell yourself. This one common question does need some
+              preparation on your end. Read .
+            </p>
+            <hr />
+          </div>
+        </div>
+      </div>
+
+      <div class="fourth_second">
+        <h3 class="take">Take me to</h3>
+        <div class="abcd">
+          <div class="abcd1">
+            <img
+              src="	https://static1.shine.com/l/m/images/blog/category/Trends.jpg"
+              alt=""
+            />
+            <h4 class="trend">Trend</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/suply_chain.jpg"
+              alt=""
+            />
+            <h4 class="trend">Supply Chain</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/training-2874597_640_1.jpg"
+              alt=""
+            />
+            <h4 class="trend">Supply Chain</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/six_sigma.jpg"
+              alt=""
+            />
+            <h4 class="trend">Six Sigma</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/Words.png"
+              alt=""
+            />
+            <h4 class="trend">Resume Tips</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="	https://static1.shine.com/l/m/images/blog/category/project_managment.jpg"
+              alt=""
+            />
+            <h4 class="trend">Project Management</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/Officiology_-_Office_Jokes.jpg"
+              alt=""
+            />
+            <h4 class="trend">Officiology</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/carousel_banner_final.jpg"
+              alt=""
+            />
+            <h4 class="trend">Mint + Shine Talent Insights</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/dream-job-2904780_640_1.jpg"
+              alt=""
+            />
+            <h4 class="trend">Job Search Guidance</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/megaphone-2374502_640.png"
+              alt=""
+            />
+            <h4 class="trend">Job Alert</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/Panel-Interview.jpg"
+              alt=""
+            />
+            <h4 class="trend">Job Alert</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="	https://static1.shine.com/l/m/images/blog/category/questions_1.jpg"
+              alt=""
+            />
+            <h4 class="trend">Interview Question</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/ifrs.jpg"
+              alt=""
+            />
+            <h4 class="trend">IFRS</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/Human_Resources.jpg"
+              alt=""
+            />
+            <h4 class="trend">Human Resources</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/gst.jpg"
+              alt=""
+            />
+            <h4 class="trend">GST</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/old-newspaper-350376_640_1.jpg"
+              alt=""
+            />
+            <h4 class="trend">Government News</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="	https://static1.shine.com/l/m/images/blog/category/digital_marketing.jpg"
+              alt=""
+            />
+            <h4 class="trend">Digital Marketing</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/career_prospective.jpg"
+              alt=""
+            />
+            <h4 class="trend">Career Prospects</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="	https://static1.shine.com/l/m/images/blog/category/resume.jpg"
+              alt=""
+            />
+            <h4 class="trend">Career Help</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/big_data.jpg"
+              alt=""
+            />
+            <h4 class="trend">Big Data</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <div class="contribute">
+    <h1>Contributes</h1>
+   </div>
+   
+
+  </body>
+</html>
