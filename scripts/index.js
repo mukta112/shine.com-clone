@@ -1,3 +1,9 @@
+import navbar from "../Components/navbar.js";
+import footer from "../Components/footer.js";
+
+document.getElementById("navbar").innerHTML = navbar();
+document.getElementById("footer").innerHTML = footer();
+
 let images = [
     "https://www.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fc%2Fs1%2Fimages%2Fcandidate%2Fbanner%2FMockinterview_top_companiesD.jpg&w=3840&q=75",
     "https://www.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fc%2Fs1%2Fimages%2Fcandidate%2Fbanner%2FAmazon-Transaction-Risk-Investigator-Bengaluru-14Sept.gif&w=3840&q=75",
@@ -83,7 +89,7 @@ let companies = [
     "https://static2.shine.com/r/m/images/employerbranding/666b83a3c4974b4f92613fce536a4251.png",
     "https://static2.shine.com/r/m/images/employerbranding/700cc0d27c8b416bbfb9c2765652c9cd.png",
     "https://static2.shine.com/r/m/images/employerbranding/264470edd81541d190bc774a279534aa.png",
-    "https://static2.shine.com/r/m/images/employerbranding/264470edd81541d190bc774a279534aa.png"
+    // "https://static2.shine.com/r/m/images/employerbranding/264470edd81541d190bc774a279534aa.png"
 ];
 let renderCompanies = () => {
     let container = document.querySelector(".container");

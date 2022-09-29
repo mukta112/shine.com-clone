@@ -3,9 +3,14 @@
     padding-left: 5%;
     padding-right: 5%;
     display: flex;
+    flex-flow: wrap;
     margin-left: 50px;
     justify-content: space-between;
     gap: 20px;
+    margin-bottom: 50px;
+}
+.container>div{
+    display: grid;
 }
 .button_div{
     margin-left: 35%;
@@ -27,4 +32,105 @@
     background-color: RGB(216, 219, 249);
     cursor: pointer;
 }
+.sliderHeading{
+    text-align: center;
+    line-height:60px;
+    justify-items: center;
+    font-family:"PT Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.homeSlider{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.jobList{
+    margin: auto;
+    padding: 2% 1%;
+    display: grid;
+    width: 28%;
+    height: fit-content;
+    gap: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.jobCard{
+    display: flex;
+    justify-content: space-between;
+    color:#505E6B;
+}
+.jobCardIcon{
+    display: flex;
+    column-gap: 20px;
+    color:#505E6B;
+}
+.jobDetail{
+    display: flex;
+    column-gap: 20px;
+    color:#505E6B;
+}
+.btn-link{
+    font-weight:700;
+    color:rgb(116, 57, 255);
+    display: flex;
+    justify-content: flex-end;
+}
+.searchCreate{
+    display: flex;
+    column-gap: 50px;
+    justify-items: center;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 25%;
+    margin-bottom: 50px;
+}
+.searchJob{
+    padding: 3% 5%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.employer{
+    padding: 5%;
+    background-color: RGB(242, 243, 248);
+    display: flex;
+    column-gap: 50px;
+    font-size:30px;
+}
+.employer>h2{
+    margin-left: 150px;
+}
+
+#btn1{
+    font-size:20px;
+    background-color: #fba504;
+    color: #fff;
+    box-shadow: 0 4px 10px 0 rgb(251 165 4 / 15%);
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    height: 4rem;
+    font-weight: 700;
+    margin-top: 30px;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+#btn2{
+    font-size:20px;
+    background-color: #8652ff;
+    color: #fff;
+    box-shadow: 0 4px 10px 0 rgb(251 165 4 / 15%);
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    height: 4rem;
+    font-weight: 700;
+    margin-top: 30px;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
 
