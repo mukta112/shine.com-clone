@@ -1,0 +1,153 @@
+*{
+    font-family: sans-serif;
+}
+
+
+
+#vlogmain{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+
+#vlogmain-1{
+    display: flex;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 8px 8px 0px 0px;
+}
+#vlog-1{
+    display: grid;
+    width: 60%;
+    margin-right: 70px;
+}
+#vlog-1>div{
+    display: grid;
+}
+#vlog-1 a{
+    text-decoration: none;
+    color: #8652FF;
+    font-size: 15px;
+}
+#vlog-1>div>input{
+    padding: 15px;
+    /* margin-bottom: 20px; */
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+#vlog-1>div>input:nth-child(2){  
+    margin-bottom: 20px;
+}
+#vlog-1>div>div>input{
+    margin-right: 5px;
+}
+#vlog-1>div>div>p{
+    font-size: 14px;
+    color: rgb(46, 46, 46);
+}
+#vlog-1>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+#vlog-1>div:nth-child(2)>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vlogbtn-1{
+    background-color: #8652FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#vlogbtn-1+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#vlogbtn-1+div hr{
+    width: 50px;
+    height: 0px;
+}
+#vlogbtn-2{
+    background-color: white;
+    border: 1px solid #8652FF;
+    color: #8652FF;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#vlog-2{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#vlog-2>div>div>img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+#vlog-2>div:first-child{
+    display: grid;
+}
+#vlog-2>div:first-child hr{
+    height: 400px;
+}
+#vlog-2>div:last-child>div{
+    display: flex;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    font-size: 13px;
+    font-weight: bold; 
+    justify-content: center;
+    align-items: center;
+    color: #6D7883;
+}
+#vlog-2>div>div:first-child img{
+    margin-left: -10px;
+}
+#vlog-2>div>div:last-child img{
+    width: 30px;
+}
+
+
+#vlogmain-2{
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 8px 8px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: #F3FBFD;
+}
+#vlogmain-2 p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #505E6B;
+    margin-right: 10px;
+}
+#vlogmain-2 button{
+    background-color: #8652FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#vlogmain-2 button a{
+    text-decoration: none;
+    color: white;
+}
