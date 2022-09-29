@@ -14,17 +14,20 @@
     justify-content: center;
     align-items: center;
     height: 93px;
-    border: 1px solid red;
-    margin-top: 10px;
     
+    margin-top: 10px;
+    gap: 57px;
    
 }
 .m_divContainer>div>p{
     font-size: 22px;
     padding: 12px;
-    border: 1px solid green;
+    background-color: #9CECE0;
     cursor: pointer;
+    border-radius: 3px;
+    
 }
+
 .m_divContainer+h2{
     text-align: center;
     font-size: 38px;
