@@ -6,6 +6,7 @@
 #fmain{
     display: flex;
     padding: 40px 6% 15px 6%;
+    background-color: rgb(238, 238, 238);
 }
 #fmain>div{
     width: 20%;

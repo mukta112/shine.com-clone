@@ -1,0 +1,67 @@
+*{
+    font-family: sans-serif;
+    color: #333333;
+    background-color: #F3F3F3;
+ }
+
+
+#vsnav{
+    border-bottom: 1px solid gray;
+    height: 65px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+#vsnav>img{
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    
+}
+
+#vspayimg>img{
+    width: 200px;
+    margin-top: 20px;
+    background-color: #F3F3F3;
+}
+#vsotpbox{
+    width: 20%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+#vsotpbox>h2{
+    font-weight: bold;
+    background-color: white;
+}
+#vsotpbox>p{
+    font-size: 12px;
+    background-color: white;
+
+}
+#vsotpbox>div>input{
+    padding: 15px;
+    border: none;
+    background-color: #F3F3F3;
+    margin-bottom: 20px;
+}
+#vsotpbox>div{
+    background-color: white;
+}
+#vsotpbox>div>button{
+    padding: 15px;
+    border: none;
+    background-color: #7037f7;
+    margin-bottom: 20px;
+    color: white;
+}
+#vsotpbox span{
+    color: green;
+}

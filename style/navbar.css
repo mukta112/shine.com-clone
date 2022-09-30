@@ -23,6 +23,13 @@
     margin-right: 8px;
 }
 
+#mainnav{
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
 #vmain{
     display: flex;
     justify-content: space-between;
@@ -56,6 +63,16 @@
 #vmain-2>div{
     display: flex;
 }
+#vmain-2 button:first-child a{
+    text-decoration: none;
+}
+#vmain-2 button:first-child a:hover{
+    color: white;
+}
+#vmain-2 button:last-child a{
+    text-decoration: none;
+    color: white;
+}
 #vmain-2>div:first-child{
     margin-right: 30px;
 }
@@ -63,7 +80,7 @@
     width: 16px;
     height: 16px;
 }
-#vmain-1>div>img{
+#vmain-1>div>a>img{
     width: 70px;
     height: 50px;
 }
