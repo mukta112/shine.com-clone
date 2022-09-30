@@ -15,9 +15,9 @@
         <div id="vlogmain-1">
             <div id="vlog-1">
                 <div>
-                    <h1>Sign-in</h1>
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Password">
+                    <h1>Sign-in</h1> 
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="password" id="password" placeholder="Password">
                 </div>
                 <div>
                     <div>
@@ -28,13 +28,13 @@
                         <a href="">Forgot Password</a>
                     </div>
                 </div>
-                <button id="vlogbtn-1">Login</button>
+                <button id="vlogbtn-1" onclick="loginFunction()">Login</button>
                 <div>
                     <hr>
                     <p>or</p>
                     <hr>
                 </div>
-                <button id="vlogbtn-2">Login via OTP</button>
+                <button onclick="otpFunction()" id="vlogbtn-2">Login via OTP</button>
             </div>
            
             <div id="vlog-2">
@@ -60,9 +60,12 @@
         <div id="vlogmain-2">
             <p>Don't have Shine account?</p>
             <button>
-                <a href="">Register Now</a>
+                <a href="./signup.html">Register Now</a>
             </button>
         </div>
     </div>
 </body>
 </html>
+
+
+<script src="./scripts/login.js"></script>

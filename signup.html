@@ -25,7 +25,7 @@
         </div>
 
         <div id="vimg">
-            <img src="https://www.shine.com/next/static/images/shine-logo.png" alt="">
+            <a href="./index.html"><img src="https://www.shine.com/next/static/images/shine-logo.png" alt=""></a>
         </div>
 
         <div id="vsign">
@@ -46,12 +46,12 @@
                     <hr>
                 </div>
                 <div class="vinp">
-                    <input type="text" placeholder="Name*">
+                    <input type="text" id="fname" placeholder="Name*">
                     <input type="text" placeholder="Mobile*">
                 </div>
                 <div class="vinp">
-                    <input type="email" placeholder="Email*">
-                    <input type="text" placeholder="Password*">
+                    <input type="email" id="email" placeholder="Email*">
+                    <input type="password" id="password" placeholder="Password*">
                 </div>
                 <p class="vsp" id="vsp-2">*Password must be of 6 or more digits</p>
                 <div class="vinp">
@@ -63,27 +63,7 @@
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10</option>
-                        <option value="">11</option>
-                        <option value="">12</option>
-                        <option value="">13</option>
-                        <option value="">14</option>
-                        <option value="">15</option>
-                        <option value="">16</option>
-                        <option value="">17</option>
-                        <option value="">18</option>
-                        <option value="">19</option>
-                        <option value="">20</option>
-                        <option value="">21</option>
-                        <option value="">22</option>
-                        <option value="">23</option>
-                        <option value="">24</option>
-                        <option value="">25</option>
-                        <option value="">25+</option>
+                        <option value="">5+</option>
                     </select>
                     <select name="" id="">
                         <option value="">Highest Qualification*</option>
@@ -105,7 +85,7 @@
                     <input type="checkbox">
                     <p>I agree to <a href="">Terms & Conditions</a>  and <a href="">Privacy policy</a> & Receive jobs notifications</p>
                 </div>
-                <button>Register</button>
+                <button onclick="signupFunction()">Register</button>
             </div>
             <div id="vsign-2">
                 <div>
@@ -132,3 +112,5 @@
     </div>
 </body>
 </html>
+
+<script src="./scripts/signup.js"></script>
