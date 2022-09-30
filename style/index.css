@@ -81,17 +81,26 @@
     justify-content: flex-end;
 }
 .searchCreate{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     column-gap: 50px;
-    justify-items: center;
-    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
     margin-top: 80px;
-    margin-left: 25%;
     margin-bottom: 50px;
+    font-size: 20px;
 }
 .searchJob{
-    padding: 3% 5%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5%;
+    color: #38404c;
+}
+.searchJob>img{
+    width: 15%;
 }
 .employer{
     padding: 5%;
@@ -104,7 +113,7 @@
     margin-left: 150px;
 }
 
-#btn1{
+.btn1{
     font-size:20px;
     background-color: #fba504;
     color: #fff;
@@ -118,7 +127,7 @@
     border: 1px solid transparent;
     border-radius: 10px;
 }
-#btn2{
+.btn2{
     font-size:20px;
     background-color: #8652ff;
     color: #fff;
@@ -131,6 +140,32 @@
     align-items: center;
     border: 1px solid transparent;
     border-radius: 10px;
+}
+.seniorRoles{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 50px;
+}
+.roles{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    align-items: center;
+    gap: 20px;
+    padding: 4%;
+    color: #38404c;
+}
+.roles>img{
+    width: 10%;
+}
+.explore{
+    padding:6% 0 6% 5%;
+    background-color: RGB(242, 243, 248);
+    display: flex;
+    gap: 70px;
+    font-size:30px;
 }
 
 
