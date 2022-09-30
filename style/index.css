@@ -12,6 +12,9 @@
 .container>div{
     display: grid;
 }
+#slideshow{
+    padding-top: 200px;
+}
 .button_div{
     margin-left: 35%;
     margin-bottom: 50px;
