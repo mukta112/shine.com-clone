@@ -17,5 +17,12 @@ function loginFunction(){
 
 
 function otpFunction(){
-    window.location.href = "./otp.html"
+    let mob = document.querySelector("#mobinp").value
+    if(mob.length == 10){
+        window.location.href = "./otp.html"
+    }
+    else{
+        alert("Enter valid Number")
+    }
+
 }
