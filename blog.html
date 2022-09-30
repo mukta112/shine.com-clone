@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+      header {
+        width: 100%;
+        /* height: 100vh; */
+        /* border: 1px solid blue; */
+      }
+      .navSection {
+        /* border: 1px solid rgb(0, 136, 255); */
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      #logo {
+        /* border: 1px solid green; */
+        width: 13%;
+        height: 30px;
+        display: flex;
+        padding-bottom: 60px;
+        margin-right: -100px;
+      }
+      img {
+        /* border: 1px solid yellowgreen; */
+        height: 59px;
+        width: 150%;
+      }
+
+      nav {
+        /* border: 1px solid red; */
+        width: 39%;
+        display: flex;
+        justify-content: space-around;
+      }
+      nav a {
+        text-decoration: none;
+        justify-content: space-evenly;
+        padding-top: 5px;
+        font-size: 16px;
+        color: #333333;
+        position: relative;
+      }
+      nav a i {
+        font-size: 20px;
+      }
+      .btn_search {
+        /* border: 1px solid red; */
+        width: 260px;
+        display: flex;
+        margin-left: -125px;
+        border: none;
+      }
+      #btn {
+        /* border: 1px solid blue; */
+        background-color: #2980b9;
+        width: 40px;
+        height: 35px;
+      }
+      #search {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: none;
+        width: 220px;
+      }
+      #btn i {
+        color: #fff;
+        padding: 10px;
+      }
+      .second_navbar {
+        width: 100%;
+        display: flex;
+        background-color: #f1f2f6;
+        height: 8vh;
+        margin-top: 10px;
+        /* border: 1px solid red; */
+        padding: 8px;
+        gap: 10px;
+      }
+      .s_nav {
+        font-size: 14px;
+      }
+      .first_navbar a {
+        /* border: 1px solid green; */
+        text-decoration: none;
+        color: #333333;
+        width: 100px;
+        display: flex;
+        margin-left: 25px;
+        flex-direction: column;
+      }
+      .small_nav {
+        /* border: 1px solid green; */
+        padding: 10px;
+        width: 100%;
+      }
+      .small_nav a {
+        text-decoration: none;
+        font: 14px;
+        color: #333333;
+        margin-left: 25px;
+      }
+      #third_navbar {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 420px;
+        background-color: #5352ed;
+        display: flex;
+      }
+      .third_navbar1 {
+        height: 320px;
+        width: 750px;
+        /* border: 1px solid red; */
+        margin-left: 200px;
+        margin-top: 80px;
+        background-image: url("https://static1.shine.com/l/m/images/blog/bpo_interview_questions_answers_banner.jpg");
+      }
+      .third_navbar1 > img {
+        height: 320px;
+        width: 750px;
+      }
+      .third_navbar2 {
+        /* border: 1px solid red; */
+        width: 400px;
+        height: 320px;
+        margin-top: 80px;
+        margin-left: 40px;
+      }
+      .nab {
+        border: 1px solid blue;
+
+        width: 395px;
+        height: 150px;
+
+        /* margin-top: 10px; */
+        background-image: url("https://static1.shine.com/l/m/images/blog/Profile_Summary_for_freshers.png");
+      }
+      .nab1 {
+        border: 1px solid blue;
+        width: 400px;
+        height: 150px;
+        margin-top: 20px;
+        background-image: url("https://static1.shine.com/l/m/images/blog/request-for-relieving-letter-after-resign.jpg");
+      }
+      .nab1 > img {
+        width: 395px;
+        height: 145px;
+      }
+      .nab > img {
+        width: 395px;
+        height: 140px;
+      }
+      .ppp {
+        margin-top: 250px;
+        margin-left: 25px;
+        color: #ecf0f1;
+        font-size: 20px;
+      }
+      .sec_pp {
+        margin-left: 25px;
+        color: #ecf0f1;
+        font-size: 14px;
+        /* text-decoration-line: underline; */
+      }
+
+      .s_div {
+        font: 18px;
+        color: #ffffff;
+        margin-top: 105px;
+        margin-left: 10px;
+      }
+      .s_ppp {
+        margin-top: 5px;
+        color: #ffffff;
+        /* text-decoration-line: underline; */
+        font-size: 13px;
+        margin-left: 10px;
+      }
+      #fourth_nav {
+        height: 2000px;
+        /* border: 1px solid ; */
+        display: flex;
+        gap: 130px;
+        margin-top: 45px;
+        width: 100%;
+      }
+      .forth_first {
+        /* border: 1px solid red; */
+        width: 55%;
+        height: 1500px;
+        margin-left: 185px;
+        /* border-radius: 10px; */
+
+        display: block;
+      }
+      .fourth_second {
+        /* border: 1px solid green; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 18%;
+        height: 1320px;
+        margin-left: -100px;
+      }
+      .abcd {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 150px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;
+        gap: 5px;
+        margin-left: 10px;
+      }
+      .abcd1 {
+        
+        width: 110px;
+        height: 120px;
+      }
+      #font {
+        margin-top: 10px;
+        margin-left: 15px;
+        font: 20px;
+        color: #ffffff;
+      }
+      .paragraph {
+        margin-top: 25px;
+        margin-left: 15px;
+        font-size: 15px;
+        color: #ffffff;
+      }
+      .take {
+        font-size: 18px;
+        color: #28303f;
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+      .abcd1 > img {
+        width: 108px;
+        height: 70px;
+      }
+      .trend {
+        text-align: center;
+        color: #3f5f94;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+      .fourth {
+        /* border: 1px solid blue; */
+        background-color: #0a3d62;
+        height: 125px;
+        border-radius: 10px;
+      }
+      .tendiv {
+        /* border: 1px solid blue; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15px;
+        gap: 25px;
+      }
+      .trenddiv1 {
+        width: 100%;
+        height: 330px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        /* border: 1px solid red; */
+      }
+      .recent {
+        margin-top: 35px;
+        font-size: 26px;
+        color: #3f5f94;
+      }
+      .trenddiv1 > img {
+        width: 100%;
+        height: 150px;
+      }
+      .header {
+        color: #333333;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-left: 15px;
+      }
+      .para1 {
+        color: #666666;
+        font-size: 13px;
+        margin-top: 10px;
+        margin-left: 15px;
+      }
+      .img_small {
+        margin-left: 10px;
+        display: flex;
+      }
+      .img_small > img {
+        margin-top: 10px;
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+      }
+      .smal_para {
+        margin-top: 15px;
+        margin-left: 10px;
+      }
+      .end_point {
+        /* border: 1px solid blue; */
+
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-left: 530px;
+      }
+      #contribute {
+        border: 1px solid white;
+        background-color: rgb(246, 246, 246);
+        /* color: #f6f6f6; */
+        width: 100%;
+        height: 500px;
+        margin-top: 20px;
+      }
+      .hea1 {
+        color: #3f5f94;
+        font-size: 26px;
+        margin-left: 190px;
+        margin-top: 50px;
+      }
+      .last_div {
+        /* border: 1px solid red; */
+        width: 75%;
+        height: 330px;
+        /* margin: auto; */
+        margin-left: 180px;
+        display: flex;
+      }
+      .last_div1 {
+        /* border: 1px solid blue; */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        width: 18%;
+        height: 280px;
+        margin-top: 10px;
+        margin-left: 15px;
+        gap: 10px;
+      }
+      .last_div1 > img {
+        width: 100%;
+        height: 180px;
+      }
+      .name {
+        color: #333333;
+        font-size: 16px;
+        text-align: center;
+      }
+      .para {
+        font-size: 13px;
+        color: #999999;
+        text-align: center;
+      }
+      .para2 {
+        margin-top: 30px;
+        font-size: 15px;
+        color: #3f5f94;
+        font-weight: bold;
+        text-align: center;
+      }
+      .button {
+        border: none;
+        background-color: #2980b9;
+        height: 50px;
+        width: 120px;
+        font-size: 18px;
+        color: white;
+        margin-top: 15px;
+        margin-left: 1160px;
+      }
+      .payment {
+        border: 1px solid white;
+        width: 100%;
+        height: 250px;
+        margin-top: 30px;
+        color: #333333;
+        background-color: rgb(246, 246, 246);
+      }
+      .pay {
+        /* border: 1px solid green; */
+        width: 80%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 160px;
+        margin-top: 25px;
+      }
+      .payment1 {
+        /* border: 1px solid blue; */
+        width: 600px;
+        margin-top: 10px;
+      }
+      .payment2 {
+        /* border: 1px solid red; */
+        width: 200px;
+        margin-top: 10px;
+      }
+      .payment1 a {
+        margin-top: 30px;
+        text-decoration: none;
+        margin-left: 20px;
+        color: #333333;
+      }
+      .payment2 a i {
+        font-size: 30px;
+        margin-left: 20px;
+        color: #333333;
+      }
+      .card {
+          /* border: 1px solid red; */
+          width: 100%;
+          height: 120px;
+        }
+        .card123 {
+          /* border: 1px solid green; */
+          width: 90%;
+          height: 90px;
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-evenly;
+          margin-left: 100px;
+        }
+        .card1 {
+          margin-top: 10px;
+          margin-right: 80px;
+        }
+        .card1 > h1 {
+          font-size: 18px;
+          color: #333333;
+        }
+        .card > p {
+          font-size: 13px;
+          color: #999999;
+        }
+        .card2 {
+          margin-top: 10px;
+          font-size: 14px;
+          color: #666666;
+          margin-right: 350px;
+        }
+        .card3 {
+          margin-top: 10px;
+          font-size: 14px;
+          color: #666666;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section class="navSection">
+        <div id="logo">
+          <img
+            src="https://www.exchange4media.com/news-photo/1522754132_FX6hMY_Shine.com-Logo_final.jpg"
+            alt=""
+          />
+        
+        </div>
+
+        <div class="btn_search">
+          <input
+            type="text"
+            name=""
+            id="search"
+            placeholder="Search Courses assessment.."
+          />
+          <div id="btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <nav>
+          <a href="">Job Assistance</a>
+          <a href="">Practice Tests</a>
+          <a href="">Free Resources</a>
+          <a href="">Blog</a>
+          <a href=""><i class="fa-solid fa-phone"></i></a>
+          <a href=""><i class="fa-regular fa-user"></i></a>
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+      </section>
+    </header>
+    <!-- ******************second navbar******************** -->
+
+    <div class="second_navbar">
+      <div class="first_navbar">
+        <a href="#" class="s_nav">Explore</a>
+        <a href="#" class="second_nav2">Categories</a>
+      </div>
+      <div class="small_nav">
+        <a href="#" class="sec_nav">Six Sigma</a>
+        <a href="#" class="sec_nav">Project Management</a>
+        <a href="#" class="sec_nav">Big Data</a>
+        <a href="#" class="sec_nav">IT Software</a>
+        <a href="#" class="sec_nav">Data Science</a>
+        <a href="#" class="sec_nav">cloud computing</a>
+        <a href="#" class="sec_nav">Analytics Vidhya</a>
+      </div>
+    </div>
+
+    <!-- ***********************slide bar***************************** -->
+
+    <div id="third_navbar">
+      <div class="third_navbar1">
+        <p class="ppp">Banking Interview Questions and Answers</p>
+        <p class="sec_pp">Harshita Aggrawal</p>
+      </div>
+
+      <div class="third_navbar2">
+        <div class="nab">
+          <p class="s_div">Profile Summary freshers examples...</p>
+          <p class="s_ppp">Harshita Khulkar</p>
+        </div>
+        <div class="nab1">
+          <p class="s_div">How To Request For..</p>
+          <p class="s_ppp">Vidhi Shukla</p>
+         
+        </div>
+      </div>
+    </div>
+
+    <!-- ************************************************** -->
+
+    <div id="fourth_nav">
+      <div class="forth_first">
+        <div class="fourth">
+          <h3 id="font">Talent Economy</h3>
+          <p class="paragraph">
+            It goes without saying that over time, jobs will require a different
+            set of unique skillsets, as opposed to the ones required now. By
+            applying for the online professional courses present on this
+            platform, you'll be able to stay ahead of the curve and massively
+            improve your job prospects by staying future-ready at all times.
+          </p>
+        </div>
+        <h1 class="recent">Recent added</h1>
+        <div class="tendiv">
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/Deal_with_toxic_manager.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              How To Deal With a Toxic Manager: Tips That Might Come Handy
+            </h1>
+            <p class="para1">
+              There are millions of people who suffer from a toxic boss and are
+              struggling to cope with the situation. Do not let it affect your
+              life. Here are some steps that you can take.
+            </p>
+            <hr />
+
+            <style></style>
+            <div class="img_small">
+              <img
+                src="https://static1.shine.com/l/m/images/blog/author/Apoorva.png"
+                alt=""
+              />
+              <p class="smal_para">Apoorva</p>
+            </div>
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/salary_negotiation.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              How to Use a New Job Offer to Re- Negotiate Your Current Salary
+            </h1>
+            <p class="para1">
+              There are many factors like an opportunity for advancement, work
+              environment, colleagues, etc. that need to be kept in mind before
+              accepting a job offer. In a case where you do not feel like
+              accepting the offer, you can use it as a way to renegotiate your
+              current salary.
+            </p>
+            <hr />
+            <div class="img_small">
+              <img
+                src="https://static1.shine.com/l/m/images/blog/author/Apoorva.png"
+                alt=""
+              />
+              <p class="smal_para">Apoorva</p>
+            </div>
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/Address_Employment_Gap.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              Here’s How To Address An Employment Gap In a Job Interview
+            </h1>
+            <p class="para1">
+              If you have an employment gap in your resume, it can be stressful
+              when looking for a new job. We are giving you a few tips to
+              address these employment gaps.
+            </p>
+            <hr />
+            <div class="img_small">
+              <img
+                src="https://static1.shine.com/l/m/images/blog/author/Apoorva.png"
+                alt=""
+              />
+              <p class="smal_para">Apoorva</p>
+            </div>
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/High_paying_marketing_jobs.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              A Look at The High Paying Marketing Jobs in India (With Average
+              Salaries)
+            </h1>
+            <p class="para1">
+              With the rapid evolution of technologies and changing customer
+              behaviour, marketing has got a new meaning. It is an evolving
+              career with considerable bloom in India. It is also considered to
+              in Marketing.
+            </p>
+            <hr />
+            <div class="img_small">
+              <img
+                src="https://static1.shine.com/l/m/images/blog/author/Apoorva.png"
+                alt=""
+              />
+              <p class="smal_para">Apoorva</p>
+            </div>
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/Negotiate_your_salary.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              A Handbook To Negotiating Your Salary Like A Pro
+            </h1>
+            <p class="para1">
+              Each of us is well aware that negotiation highly affects your pay
+              pack, but remember, it is also a game. Here are tips that will
+              help you master the game of salary negotiation.
+            </p>
+            <hr />
+            <div class="img_small">
+              <img
+                src="https://static1.shine.com/l/m/images/blog/author/Apoorva.png"
+                alt=""
+              />
+              <p class="smal_para">Apoorva</p>
+            </div>
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/Become_an_influencer_wise_or_not.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              Quitting Your Job To Become An Influencer: Is It A Wise Idea or
+              Not?
+            </h1>
+            <p class="para1">
+              Influencers review a brand's product or service, generating
+              millions of likes, which ultimately help generate business for the
+              brand. However, with the increasing popularity of the career, have
+              you ever thought to pursue it? Well, let’s give it a thought.
+            </p>
+            <hr />
+            <div class="img_small">
+              <img
+                src="https://static1.shine.com/l/m/images/blog/author/Apoorva.png"
+                alt=""
+              />
+              <p class="smal_para">Apoorva</p>
+            </div>
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/No_response_of_Interview.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              No Response After An Interview? Here's How to Follow Up by Email
+            </h1>
+            <p class="para1">
+              Don’t be tricked into thinking that once the interview is over,
+              your work is done and you just have to wait till the employer gets
+              back. Following up is an important strategic technique that allows
+              you to stand out. Let’s find out if following up is a good idea.
+            </p>
+            <hr />
+            <div class="img_small">
+              <img
+                src="https://static1.shine.com/l/m/images/blog/author/Apoorva.png"
+                alt=""
+              />
+              <p class="smal_para">Apoorva</p>
+            </div>
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="  https://static1.shine.com/l/m/images/blog/it-professional-jobs.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              Ways That IT Professionals Can Keep Their Tech Skills Up To Date
+            </h1>
+            <p class="para1">
+              In this competitive era, it's important to stand out and this is
+              why employee upskilling is the need of the hour. In this blog, we
+              tell you how IT professionals can keep their tech skills relevant
+              and up to date.
+            </p>
+            <hr />
+            <div class="img_small">
+              <img
+                src="https://static1.shine.com/l/m/images/blog/author/Apoorva.png"
+                alt=""
+              />
+              <p class="smal_para">Apoorva</p>
+            </div>
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/data_science.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              A Guide To Building A Great Data Science Resume With Samples
+            </h1>
+            <p class="para1">
+              Data Science is revolutionizing the future and is surely one of
+              the hottest careers of the 21st century. Here are some tips to
+              ensure that your data science resume gets the green light and .
+            </p>
+            <hr />
+            <div class="img_small">
+              <img
+                src="https://static1.shine.com/l/m/images/blog/author/Apoorva.png"
+                alt=""
+              />
+              <p class="smal_para">Apoorva</p>
+            </div>
+          </div>
+          <div class="trenddiv1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/Why_should_we_hire_you.jpg"
+              alt=""
+            />
+            <h1 class="header">
+              Why Should We Hire You? - An Easy Hack To Answer
+            </h1>
+            <p class="para1">
+              The 'why should we hire you question essentially tests your
+              ability to sell yourself. This one common question does need some
+              preparation on your end. Read .
+            </p>
+            <hr />
+            <div class="img_small">
+              <img
+                src="https://static1.shine.com/l/m/images/blog/author/Apoorva.png"
+                alt=""
+              />
+              <p class="smal_para">Apoorva</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fourth_second">
+        <h3 class="take">Take me to</h3>
+        <div class="abcd">
+          <div class="abcd1">
+            <img
+              src="	https://static1.shine.com/l/m/images/blog/category/Trends.jpg"
+              alt=""
+            />
+            <h4 class="trend">Trend</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/suply_chain.jpg"
+              alt=""
+            />
+            <h4 class="trend">Supply Chain</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/training-2874597_640_1.jpg"
+              alt=""
+            />
+            <h4 class="trend">Supply Chain</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/six_sigma.jpg"
+              alt=""
+            />
+            <h4 class="trend">Six Sigma</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/Words.png"
+              alt=""
+            />
+            <h4 class="trend">Resume Tips</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="	https://static1.shine.com/l/m/images/blog/category/project_managment.jpg"
+              alt=""
+            />
+            <h4 class="trend">Project Management</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/Officiology_-_Office_Jokes.jpg"
+              alt=""
+            />
+            <h4 class="trend">Officiology</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/carousel_banner_final.jpg"
+              alt=""
+            />
+            <h4 class="trend">Mint + Shine Talent Insights</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/dream-job-2904780_640_1.jpg"
+              alt=""
+            />
+            <h4 class="trend">Job Search Guidance</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/megaphone-2374502_640.png"
+              alt=""
+            />
+            <h4 class="trend">Job Alert</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/Panel-Interview.jpg"
+              alt=""
+            />
+            <h4 class="trend">Job Alert</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="	https://static1.shine.com/l/m/images/blog/category/questions_1.jpg"
+              alt=""
+            />
+            <h4 class="trend">Interview Question</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/ifrs.jpg"
+              alt=""
+            />
+            <h4 class="trend">IFRS</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/Human_Resources.jpg"
+              alt=""
+            />
+            <h4 class="trend">Human Resources</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/gst.jpg"
+              alt=""
+            />
+            <h4 class="trend">GST</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/old-newspaper-350376_640_1.jpg"
+              alt=""
+            />
+            <h4 class="trend">Government News</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="	https://static1.shine.com/l/m/images/blog/category/digital_marketing.jpg"
+              alt=""
+            />
+            <h4 class="trend">Digital Marketing</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/career_prospective.jpg"
+              alt=""
+            />
+            <h4 class="trend">Career Prospects</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="	https://static1.shine.com/l/m/images/blog/category/resume.jpg"
+              alt=""
+            />
+            <h4 class="trend">Career Help</h4>
+          </div>
+          <div class="abcd1">
+            <img
+              src="https://static1.shine.com/l/m/images/blog/category/big_data.jpg"
+              alt=""
+            />
+            <h4 class="trend">Big Data</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="end_point">Learn more</button>
+    <!-- *********************Day-3******************** -->
+    <style></style>
+    <div id="contribute">
+      <h1 class="hea1">Contributes</h1>
+      <div class="last_div">
+        <div class="last_div1">
+          <img
+            src="https://static1.shine.com/l/m/images/blog/author/Neeraj-Author.jpg"
+            alt=""
+          />
+          <h4 class="name">Neraj Singh</h4>
+          <p class="para">Chief Revenue Officer</p>
+          <p class="para2">2 articles</p>
+        </div>
+        <div class="last_div1">
+          <img
+            src="https://static1.shine.com/l/m/images/blog/author/Ruchi.jpg"
+            alt=""
+          />
+          <h4 class="name">Ruchi Bhatia"</h4>
+          <p class="para">Recruitment Lead</p>
+          <p class="para2">1 articles</p>
+        </div>
+        <div class="last_div1">
+          <img
+            src="https://static1.shine.com/l/m/images/blog/author/Gaurav-Mishra.jpg
+        "
+            alt=""
+          />
+          <h4 class="name">Gaurav Mishra"</h4>
+          <p class="para">Marketing Head</p>
+          <p class="para2">34 articles</p>
+        </div>
+        <div class="last_div1">
+          <img
+            src="	https://static1.shine.com/l/m/images/blog/author/Devina_Sengupta.jpg
+        "
+            alt=""
+          />
+          <h4 class="name">Devina Sengupta</h4>
+          <p class="para">Deputy Editor</p>
+          <p class="para2">2 articles</p>
+        </div>
+        <div class="last_div1">
+          <img
+            src="https://static1.shine.com/l/m/images/blog/author/Udeta-Author.jpg"
+            alt=""
+          />
+          <h4 class="name">Udeta Ghosh</h4>
+          <p class="para">Online Marketing Executive</p>
+          <p class="para2">27 articles</p>
+        </div>
+      </div>
+      <button class="button">View All</button>
+    </div>
+    <!-- ****************************************************** -->
+   
+
+    <div class="payment">
+      <div class="pay">
+        <div class="payment1">
+          <a href="">About Us</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Terms & Conditions</a>
+          <a href="">Contact Us</a>
+          <a href="">Disclaimer</a>
+        </div>
+
+        <div class="payment2">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <hr />
+     
+      <div class="card">
+        <div class="card123">
+          <div class="card1">
+            <h1>100% Secure Payment</h1>
+            <p>All major credit & debit cards accepted</p>
+          </div>
+          <div class="card2">
+            <p>Payment options</p>
+          </div>
+          <div class="card3">
+            <p>Copyright © 2022 HT Media Limited.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
