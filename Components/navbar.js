@@ -1,5 +1,5 @@
 function navbar(){
-    return `  <div id="vnavbar">
+    return ` <div id="vnavbar">
 
     <div id="mainnav">
 
@@ -48,13 +48,38 @@ function navbar(){
     
       </div>
       <div id="vbot">
-          <a href="">HOME</a>
-          <a href="">JOBS</a>
-          <a href="">JOBS SEEKING ASSISTANCE</a>
-          <a href="">COURSES</a>
-          <a href="">CAREER GUIDANCE</a>
-          <a href="">BLOG</a>
+          <a href="./index.html">HOME</a>
+          <div class="dropdown">
+             <button class="dropbtn">JOBS</button>
+               <div class="dropdown-content">
+                  <a href="#">Search</a>
+                  <a href="#">Jobs For You</a>
+                  <a href="#">Create Alert</a>
+              </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">JOBS SEEKING ASSISTANCE</button>
+              <div class="dropdown-content">
+                 <a href="./profileBooster.html">Profile Booster</a>
+                 <a href="./applicationHIGH.html">Application Highlighter</a>
+                 <a href="#">Resume Writing</a>
+                 <a href="#">Check Your Resume</a>
+                 <a href="#">View All</a>
+             </div>
+         </div>
+         <div class="dropdown">
+            <button class="dropbtn">COURSES</button>
+              <div class="dropdown-content">
+                 <a href="#">Sales And Marketing</a>
+                 <a href="#">Information And Technology</a>
+                 <a href="#">Operation Management</a>
+                 <a href="#">Human Resources</a>
+                 <a href="#">View All</a>
+                 </div>
+          
        </div>
+       <a href="">CAREER GUIDANCE</a>
+          <a href="./blog.html">BLOG</a>
     </div>
    
 </div>`
