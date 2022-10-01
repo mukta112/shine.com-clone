@@ -15,6 +15,28 @@
 #slideshow{
     padding-top: 200px;
 }
+#slideshow:hover{
+    cursor: pointer;
+}
+.assess-div{
+    display: flex;
+    padding-left: 40%;
+    padding-right: 20%;
+    align-items: center;
+    gap:50px ;
+}
+.assess-items{
+    background-color: transparent;  
+}
+.assess-items>img{
+    background-color: transparent;
+    padding: 10%;
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
+    
+}
+    
 .button_div{
     margin-left: 35%;
     margin-bottom: 50px;
@@ -62,6 +84,10 @@
     gap: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.jobList:hover{
+    border:1px solid blue;
+    cursor: pointer;
+}
 .jobCard{
     display: flex;
     justify-content: space-between;
@@ -101,6 +127,10 @@
     gap: 20px;
     padding: 5%;
     color: #38404c;
+}
+.searchJob>p:hover{
+    color: #8652ff;
+    cursor: pointer;
 }
 .searchJob>img{
     width: 15%;
@@ -160,6 +190,43 @@
     padding: 4%;
     color: #38404c;
 }
+#btn-view{
+    font-weight:700;
+    color:rgb(116, 57, 255);
+    display: flex;
+    justify-content: center;
+}
+#btn-view:hover{
+    cursor: pointer;
+}
+/* #model{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4)
+}
+.modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} */
 .roles>img{
     width: 10%;
 }
@@ -170,5 +237,27 @@
     gap: 70px;
     font-size:30px;
 }
-
+.blog{
+    background-color: #f0f0f0;
+}
+.blog-div{
+    margin: auto;
+    text-align: center;
+    padding: 2% 1%;
+    display: grid;
+    width: 28%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.blog-div>img{
+    width: 100%;
+}
+#blog-view{
+    font-weight:700;
+    color:rgb(116, 57, 255);
+    display: flex;
+    justify-content: center;
+}
+#blog-view:hover{
+    cursor: pointer;
+}
 

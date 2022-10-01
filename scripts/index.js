@@ -15,11 +15,10 @@ let images = [
     "https://www.shine.com/_next/image?url=https%3A%2F%2Fstatic1.shine.com%2Fc%2Fs1%2Fimages%2Fcandidate%2Fbanner%2Fwinter_d_home.png&w=3840&q=75"
 ];
 let i=0;
+let id;
+let container = document.getElementById("slideshow");
 let slideshow = () => {
-    let container = document.getElementById("slideshow");
-    
-
-    setInterval(() => {
+    id = setInterval(() => {
         container.innerHTML = null;
         if(i===images.length){
             i=0;
@@ -27,11 +26,17 @@ let slideshow = () => {
         let img = document.createElement("img");
         img.src=images[i];
         img.style.width="100%";
-        img.style.height="350px";
+        img.style.height="400px";
     
         container.append(img);
         i++;
     },2000)
+}
+container.onmouseover = () => {
+    clearInterval(id);
+}
+container.onmouseout = () => {
+    slideshow();
 }
 slideshow();
 
@@ -104,3 +109,35 @@ let renderCompanies = () => {
 document.getElementById("compnies").addEventListener("click",renderCompanies);
 
 console.log(companies);
+
+let apply = () => {
+    window.location.href = "./login.html"
+}
+let jobs = document.querySelectorAll(".btn-link");
+jobs.forEach((ele) => {
+    ele.addEventListener("click",apply);
+})
+
+document.getElementById("profile").addEventListener("click", ()=>{
+    window.location.href = "./signup.html"
+})
+
+// let btn = document.querySelector("#btn-view")
+// let seniorRoles = document.querySelector(".seniorRoles");
+// let span = document.querySelector(".close");
+
+// btn.addEventListener("click", ()=>{
+//     seniorRoles.style.display = "grid";
+// })
+// span.addEventListener("click",()=>{
+//     seniorRoles.style.display = "none"
+// })
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//       modal.style.display = "none";
+//     }
+// }
+
+document.querySelector("#blog-view").addEventListener("click", () => {
+    window.location.href = "./blog.html"
+})
