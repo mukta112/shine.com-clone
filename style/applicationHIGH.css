@@ -1,0 +1,123 @@
+#applicationHighlighterHeader{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: auto;
+    background-color: #ecf7fd;
+    /* padding: 50px; */
+}
+.paraAppHighDiv1{
+    margin:15px 50px 0px 50px;
+}
+.paraAppHighDiv2{
+    margin:15px 50px 20px 50px;
+}
+.applicationHighDiv1 h1{
+    margin: 50px 50px 5px 50px;
+}
+.applicationHighDiv2{
+    margin: auto;
+}
+.whyNeedProfileBooster1{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.whyTable{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: auto;
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+}
+.reasonNav{
+    display: flex;
+    gap: 50px;
+    justify-content: right;
+    margin: 20px 50px;
+}
+.reasons {
+    margin: 20px 20px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rightWrong{
+    /* border: 1px solid black; */
+    margin: 10px 30px 20px 100px;
+    gap: 50px;
+    display: flex;
+}
+#howItWorks{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    height: auto;
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* display: flex; */
+}
+.howItWorksDIV{
+    /* border: 1px solid red; */
+    margin: 5px;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+.howItWorksMainDIV{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+.maintextHIW{
+    font-weight: bold;
+}
+.logoHIW img{
+    background-color: #e7e7ff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 50% 50% 0% 50%;
+}
+#reviewsPB{
+    /* border: 1px solid black; */
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#reviewsPB h1{
+padding-left: 20px;
+}
+.reviewsDIV{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+}
+.reviewsInnerDIV{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 10px;
+}
+.reviewTitle{
+    font-weight: bold;
+}
+.reviewDate{
+    font-weight: 100;
+}
+.reviewPara{
+    font-weight: lighter;
+}
+.reviewPerson{
+    font-weight: bold;
+    text-align: right;
+}
+
+@media only screen and (max-width: 992px) {
+    #applicationHighlighterHeader{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        gap: 50px;
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
