@@ -68,7 +68,7 @@ function navbar(){
              </div>
          </div>
          <div class="dropdown">
-            <button class="dropbtn"><a href="./Courses/courses.html">COURSES</a></button>
+            <button class="dropbtn"><a href="./courses.html">COURSES</a></button>
               <div class="dropdown-content">
                  <a href="#">Sales And Marketing</a>
                  <a href="#">Information And Technology</a>
