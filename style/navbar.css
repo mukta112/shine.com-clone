@@ -160,7 +160,7 @@
     background:transparent;
     border: none;
 }
-#vbot>div a{
+#vbot>div>a{
     font-size: 11px;
     color: rgb(63, 63, 63);
     margin-right: 25px;
@@ -181,7 +181,7 @@
     z-index: 1;
     border-radius: 4px;
   }
-  .dropdown-content a {
+  .dropdown-content a{
     color: black;
     padding: 12px 16px;
     text-decoration: none;

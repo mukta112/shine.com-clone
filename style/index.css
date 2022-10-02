@@ -1,16 +1,16 @@
 
 .container{
-    padding-left: 5%;
-    padding-right: 5%;
     display: flex;
     flex-flow: wrap;
     margin-left: 50px;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     margin-bottom: 50px;
+   
 }
 .container>div{
     display: grid;
+ 
 }
 #slideshow{
     padding-top: 200px;
@@ -136,14 +136,15 @@
     width: 15%;
 }
 .employer{
-    padding: 5%;
+    padding: 4%;
     background-color: RGB(242, 243, 248);
     display: flex;
-    column-gap: 50px;
+    /* column-gap: 50px; */
     font-size:30px;
 }
 .employer>h2{
     margin-left: 150px;
+    margin-right: 40px;
 }
 
 .btn1{
@@ -234,6 +235,7 @@
     padding:6% 0 6% 5%;
     background-color: RGB(242, 243, 248);
     display: flex;
+    justify-content: space-around;
     gap: 70px;
     font-size:30px;
 }
