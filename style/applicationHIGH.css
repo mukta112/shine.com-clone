@@ -1,6 +1,7 @@
 #applicationHighlighterHeader{
     /* border: 1px solid red; */
     width: 100%;
+    padding-top: 200px;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     height: auto;
